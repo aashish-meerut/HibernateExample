@@ -13,11 +13,19 @@ public class Util {
         //Reading the hibernate configuration file
         Configuration configuration = new Configuration().configure("hibernate.cfg.xml");
         StandardServiceRegistryBuilder regBuilber = new StandardServiceRegistryBuilder();
+		
+		
+		
+		
         regBuilber.applySettings(configuration.getProperties());
         ServiceRegistry serviceRegistry = regBuilber.build();
         
         //Create SessionFacctory
         SessionFactory sessionFactory = configuration.buildSessionFactory(serviceRegistry);
+		
+		
+		
+		
         
         //Create Session from SessionFactory
         session = sessionFactory.openSession();
