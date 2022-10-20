@@ -20,19 +20,15 @@ public class HibernateManytoOne {
     	Student_Info student1 = new Student_Info("Sam", "Disilva", "Maths");
     	Student_Info student2 = new Student_Info("Joshua", "Brill", "Science");
     	Student_Info student3 = new Student_Info("Peter", "Pan", "Physics");
- 
     //    University university = new University("CAMBRIDGE", "ENGLAND");
         University university = new University("CCS", "INDIA");
         List<Student_Info> allStudents = new ArrayList<Student_Info>();
- 
         student1.setUniversity(university);
         student2.setUniversity(university);
         student3.setUniversity(university);
- 
         allStudents.add(student1);
         allStudents.add(student2);
         allStudents.add(student3);
- 
         university.setStudents(allStudents);
       //  university2.setStudents(allStudents);
 
