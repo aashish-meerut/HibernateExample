@@ -8,13 +8,11 @@
         <property name="hibernate.show_sql">true</property>
         <property name="hibernate.format_sql">false</property>
         <property name="use_sql_comments">false</property>
- 
         <property name="dialect">org.hibernate.dialect.OracleDialect</property>
         <property name="hibernate.connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
         <property name="connection.url">jdbc:oracle:thin:@:1521/xe</property>
         <property name="hibernate.connection.username">SYSTEM</property>
          <property name="hibernate.connection.password">SYSTEM</property>
- 
         <!-- add classes to map from here -->
         <mapping class="model.Author" />
         <mapping class="model.Book" />

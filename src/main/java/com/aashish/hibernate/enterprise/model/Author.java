@@ -18,18 +18,15 @@ public class Author
     @GeneratedValue
     @Column(name="AUTHOR_ID")
     private int authorId;
-    
     @Column(name="AUTHOR_NAME")
     private String authorName;
-    
     @OneToMany(mappedBy="author",cascade = CascadeType.ALL)
     private Set<Book> books;
-    
     public Author()
     {
         super();
     }
-
+// is there changes.
     public Author(int authorId, String authorName, Set books)
     {
         super();

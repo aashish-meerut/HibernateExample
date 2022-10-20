@@ -26,12 +26,11 @@ public class Book
     @ManyToOne
     @JoinColumn(name="AUTHOR_ID")
     private Author author;
-
     public Book()
     {
         super();
     }
-
+// changes is there
     public Book(int bookId, String bookTitle, String bookDescription, Author author)
     {
         super();
