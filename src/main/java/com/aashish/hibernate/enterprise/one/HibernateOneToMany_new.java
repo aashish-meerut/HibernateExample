@@ -14,12 +14,10 @@ public class HibernateOneToMany_new
     public static void main(String args[])
     {
     	Session session=  Util.giveSession();
-        
         //Begin the transaction
         session.beginTransaction();
        // savedata(session);
         getdata(session);
-        
         //Close the session
         session.close();
     }
@@ -28,13 +26,11 @@ public class HibernateOneToMany_new
     	//Create a new Author Object
         Author author = new Author();
         author.setAuthorName("Aashish Kumar");
-
         //Create a new Book Object        
         Book book1 = new Book();
         book1.setBookTitle("Hibernate  aaa");
         book1.setBookDescription("Hibernate Description  ssssss");
         book1.setAuthor(author);
-
         //Create a new Book Object        
         Book book2 = new Book();
         book2.setBookTitle("Spring  2222  ");
