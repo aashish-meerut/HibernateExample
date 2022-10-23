@@ -15,15 +15,11 @@ public class Util {
         StandardServiceRegistryBuilder regBuilber = new StandardServiceRegistryBuilder();
 		
 		
-		
-		
         regBuilber.applySettings(configuration.getProperties());
         ServiceRegistry serviceRegistry = regBuilber.build();
         
         //Create SessionFacctory
         SessionFactory sessionFactory = configuration.buildSessionFactory(serviceRegistry);
-		
-		
 		
 		
         
