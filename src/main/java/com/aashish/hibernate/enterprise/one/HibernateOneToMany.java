@@ -24,13 +24,11 @@ public class HibernateOneToMany
         
         //Create SessionFacctory
         SessionFactory sessionFactory = configuration.buildSessionFactory(serviceRegistry);
-        
         //Create Session from SessionFactory
         Session session = sessionFactory.openSession();
         
         //Begin the transaction
         session.beginTransaction();
-        
         //Create a new Author Object
         Author author = new Author();
         author.setAuthorName("JavaInterviewPoint");
