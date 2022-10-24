@@ -13,11 +13,9 @@ public class HibernateOneToOne {
 	 
 	        Student student = new Student("Sam","Disilva","Maths");
 	        Address address = new Address("10 Silver street","NYC","USA");
-	         
-	         
+	        
 	        Session session = Util.giveSession();
 	        session.beginTransaction();
-	 
 	        session.persist(address);
 	        student.setAddress(address);
 	        session.persist(student);
